@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colores - CSS</title>
+    <link rel="stylesheet" href="./css/tailwind-wally.css">
+    <link rel="stylesheet" href="./css/custom-styles.css">
+    <link rel="stylesheet" href="./css/prism.css">
+</head>
+<body class="bg-cool-gray-100">
+    <header class="p-4 bg-cool-gray-50 flex justify-between fixed top-0 left-0 right-0">
+        <div id="menu" class="p-1 bg-cool-gray-200 rounded lg:hidden">
+            <img src="./assets/icon-menu.svg" alt="">
+        </div>
+        <a href="./index.html">
+            <img src="./assets/icon-logo.svg" alt="logo wally">
+        </a>
+        <a href="" class="p-1 bg-cool-gray-200 rounded">
+            <img src="./assets/icon-search.svg" alt="">
+        </a>
+    </header>
+    <aside class="aside hidden fixed left-0 top-16 w-80 bg-cool-gray-50 h-screen z-10 lg:block">
+        <div class="p-4">
+            <p class="text-base font-bold font-inter text-cool-gray-600">Overview</p>
+        </div>
+        <a href="./overview.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-600">General</p>
+        </a>
+        <a href="./install-css.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-500">Instalar</p>
+        </a>
+        <div class="p-4">
+            <p class="text-base font-bold font-inter ">Foundations</p>
+        </div>
+        <a href="./colores-css.html" class="px-4 py-2 block bg-green-50">
+            <p class="text-base font-inter text-green-300">Colores</p>
+        </a>
+        <a href="./tipography-css.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-500">Tipografía</p>
+        </a>
+        <a href="./space-css.html" class="flex justify-between items-start px-4 py-2">
+            <p class="text-base font-inter text-cool-gray-500">Espacio</p>
+            <span class="text-sm font-inter text-cool-gray-50 bg-blue-200 px-4 py-1 rounded-full shrink-0">Beta</span>
+        </a>
+    </aside>
+    <main class="mx-4 pt-24 flex flex-col gap-6 max-w-3xl sm:mx-8 lg:my-12 lg:gap-8 lg:ml-96">
+        <h2 class="text-2xl font-inter text-cool-gray-600 lg:text-4xl">Colores</h2>
+        <div class="flex gap-2">
+            <a href="./colores-css.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-200 text-cool-gray-50 rounded-full">CSS</a>
+            <a href="./colores-tailwind.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-50 text-blue-200 rounded-full">Tailwind</a>
+            <a href="./colores-sass.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-50 text-blue-200 rounded-full">SASS</a>
+        </div>
+        <section class="flex flex-col gap-2 lg:gap-4">
+            <h3 class="text-lg font-inter text-cool-gray-600 lg:text-2xl">CSS</h3>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">La paleta de colores de Wally esta compuesta por los siguiente colores.</p>
+            <img src="./assets/img-colors.webp" alt="colores de Wally">
+        </section>
+        <section class="flex flex-col gap-2 lg:gap-4">
+            <h3 class="text-lg font-inter text-cool-gray-600 lg:text-2xl">¿Cómo aplicar los colores?</h3>
+            <p class="text-base font-inter text-cool-gray-500 font-bold lg:text-xl">Fondos</p>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Para aplicar el color de fondo solo tienes que anteponer las siglas <span class="font-bold">bg</span> antes del nombre del color, ejm: <span class="font-bold">bg-cool-gray-50</span> con esto tendrás un color de fondo aplicado sobre el elemento que prefieras.</p>
+            <div>
+                <pre class="code-container language-markup">
+                    <code>
+                        &lt;header class=&quot;bg-cool-gray-50&quot;&gt;&lt;/header&gt;
+                    </code>
+                </pre>
+            </div>
+            <p class="text-base font-inter text-cool-gray-500 font-bold lg:text-xl">Color</p>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Para aplicar el color sobre un texto solo tienes que anteponer las siglas <span class="font-bold">c</span> antes del nombre del color, ejm: <span class="font-bold">c-cool-gray-600</span></p>
+            <div>
+                <pre class="code-container language-markup">
+                    <code>
+                        &lt;p class=&quot;c-cool-gray-600&quot;&gt;Parrafo&lt;/p&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/prism.js"></script>
+</body>
+</html>

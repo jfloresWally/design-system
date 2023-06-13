@@ -1,0 +1,74 @@
+/*
+Components 
+Todos los componentes aún se encuentra en beta.
+*/
+
+.bt-primary {
+    display: inline-flex;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #25B562;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    color: #ffffff;
+  }
+.bt-primary:hover {
+    background-color: #1A6B3C;
+}
+.bt-primary:active {
+    background-color: #1A6B3C;
+}
+.bt-fill {
+    width: 100%;
+}
+
+.bt-secondary {
+    line-height: 24px;
+    text-align: center;
+    outline: none;
+    display: inline-flex;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #F9FAFB;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    color: #374151;
+    box-shadow: 0 0 2px #6B7280;
+}
+
+.bt-secondary:hover {
+    background-color: #F3F4F6;
+}
+.bt-secondary:active {
+    background-color: #F3F4F6;
+}
+
+.link-blue {
+    display: inline-block;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+    color: #3B82F6;
+    align-self: flex-start;
+}
+
+.link-blue:hover {
+    background-color: #BFDBFE;
+}
+
+#aside {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+.block {
+    display: block;
+}

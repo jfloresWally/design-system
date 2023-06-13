@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipography CSS</title>
+    <link rel="stylesheet" href="./css/tailwind-wally.css">
+    <link rel="stylesheet" href="./css/custom-styles.css">
+    <link rel="stylesheet" href="./css/prism.css">
+</head>
+<body class="bg-cool-gray-100">
+    <header class="p-4 bg-cool-gray-50 flex justify-between fixed top-0 left-0 right-0">
+        <div id="menu" class="p-1 bg-cool-gray-200 rounded lg:hidden">
+            <img src="./assets/icon-menu.svg" alt="">
+        </div>
+        <a href="./index.html">
+            <img src="./assets/icon-logo.svg" alt="logo wally">
+        </a>
+        <a href="" class="p-1 bg-cool-gray-200 rounded">
+            <img src="./assets/icon-search.svg" alt="">
+        </a>
+    </header>
+    <aside class="aside hidden fixed left-0 top-16 w-80 bg-cool-gray-50 h-screen z-10 lg:block">
+        <div class="p-4">
+            <p class="text-base font-bold font-inter text-cool-gray-600">Overview</p>
+        </div>
+        <a href="./overview.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-600">General</p>
+        </a>
+        <a href="./install-css.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-500">Instalar</p>
+        </a>
+        <div class="p-4">
+            <p class="text-base font-bold font-inter ">Foundations</p>
+        </div>
+        <a href="./colores-css.html" class="px-4 py-2 block">
+            <p class="text-base font-inter text-cool-gray-500">Colores</p>
+        </a>
+        <a href="./tipography-css.html" class="px-4 py-2 block bg-green-50">
+            <p class="text-base font-inter text-green-300">Tipografía</p>
+        </a>
+        <a href="./space-css.html" class="flex justify-between items-start px-4 py-2">
+            <p class="text-base font-inter text-cool-gray-500">Espacio</p>
+            <span class="text-sm font-inter text-cool-gray-50 bg-blue-200 px-4 py-1 rounded-full shrink-0">Beta</span>
+        </a>
+    </aside>
+    <main class="mx-4 pt-24 flex flex-col gap-6 max-w-3xl sm:mx-8 lg:my-12 lg:gap-8 lg:ml-96">
+        <h2 class="text-2xl font-inter text-cool-gray-600 lg:text-4xl">Tipografías</h2>
+        <div class="flex gap-2">
+            <a href="./tipography-css.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-200 text-cool-gray-50 rounded-full">CSS</a>
+            <a href="./tipography-tailwind.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-50 text-blue-200 rounded-full">Tailwind</a>
+            <a href="./tipography-sass.html" class="text-sm border-blue-200 border-2 px-4 py-2 bg-blue-50 text-blue-200 rounded-full">SASS</a>
+        </div>
+        <section class="flex flex-col gap-2 lg:gap-4">
+            <h3 class="text-lg font-inter text-cool-gray-600 lg:text-2xl">Estilos tipográficos</h3>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Los estilos de texto de Wally están representados como clases de CSS.</p>
+            <div>
+                <pre class="code-container language-css">
+                    <code>
+                        /* Typography class */
+                        .text-6xl-bold  -> 60px Bold
+                        .text-6xl-regular  -> 60px Regular
+
+                        .text-5xl-bold  -> 48px Bold
+                        .text-5xl-regular  -> 48px Regular
+
+                        .text-4xl-bold  -> 36px Bold
+                        .text-4xl-regular  -> 36px Regular
+
+                        .text-3xl-bold  -> 30px Bold
+                        .text-3xl-regular  -> 30px Regular
+
+                        .text-2xl-bold  -> 24px Bold
+                        .text-2xl-regular  -> 24px Regular
+
+                        .text-xl-bold  -> 20px Bold
+                        .text-xl-regular  -> 20px Regular
+
+                        .text-lg-bold  -> 18px Bold
+                        .text-lg-regular  -> 18px Regular
+
+                        .text-base-bold  -> 16px Bold
+                        .text-base-regular  -> 16px Regular
+
+                        .text-sm-bold  -> 14px Bold
+                        .text-sm-regular  -> 14px Regular
+
+                        .text-xs-bold  -> 12px Bold
+                        .text-xs-regular  -> 12px Regular
+
+                        .text-small-bold  -> 10px Bold
+                        .text-small-regular  -> 10px Regular
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="flex flex-col gap-2 lg:gap-4">
+            <h3 class="text-lg font-inter text-cool-gray-600 lg:text-2xl">¿Cómo aplicar los estilos de texto?</h3>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Para aplicar las tipografías de Wally solo es necesario usar las clases en una etiqueta de texto.</p>
+            <div>
+                <pre class="code-container language-markup">
+                    <code>
+                        &lt;h2 class=&quot;text-3xl-bold&quot;&gt;Heading 2&lt;/h2&gt;
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="flex flex-col gap-2 lg:gap-4">
+            <h3 class="text-lg font-inter text-cool-gray-600 lg:text-2xl">Texto responsive</h3>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">El texto puede ser responsive. Para lograrlo solo debes anteponer las siguientes siglas a tu clase de texto.</p>
+            <div>
+                <pre class="code-container language-css">
+                    <code>
+                        /* breakpoints */
+                        sm  > 640px;
+                        md -> 768px;
+                        lg -> 1024px;
+                        xl -> 1280px;
+                        xxl -> 1536px;
+                    </code>
+                </pre>
+            </div>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Un ejemplo: <span class="font-bold">md-text-6xl-bold</span> esto aplicaría a una medida de 60px al texto cuando el viewport tenga 768px de ancho. Esto sería lo mismo que crear la siguiente media query..</p>
+            <div>
+                <pre class="code-container language-css">
+                    <code>
+                        @media (min-width: 768px) {
+                            .md-text-6xl-bold {
+                                font-family: "Inter", sans-serif;
+                                font-size: 60px;
+                                line-height: 64px;
+                                font-weight: 700;
+                            }
+                        }    
+                    </code>
+                </pre>
+            </div>
+            <p class="text-base font-inter text-cool-gray-500 lg:text-xl">Pero en lugar de crearla, solo tienes que agregarla como una clase a tu etiqueta de texto.</p>
+            <div>
+                <pre class="code-container language-markup">
+                    <code>
+                        &lt;h1 class=&quot;text-2xl-bold lg-text-6xl-bold&quot;&gt;Titular&lt;/h1&gt;   
+                    </code>
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/prism.js"></script>
+</body>
+</html>
