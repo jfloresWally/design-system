@@ -815,25 +815,19 @@ video {
   }
 }
 
-@media (min-width: 768px){
-  .md\:flex{
-    display: flex;
-  }
-}
-
 @media (min-width: 1024px){
   .lg\:order-1{
     order: 1;
   }
 
-  .lg\:my-12{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .lg\:ml-96{
@@ -858,14 +852,6 @@ video {
 
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:flex-row{
-    flex-direction: row;
-  }
-
-  .lg\:flex-wrap{
-    flex-wrap: wrap;
   }
 
   .lg\:items-center{
